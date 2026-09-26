@@ -1,10 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morgan Trading Hub - Learn Coding</title>
-
     <style>
         * {
             box-sizing: border-box;
@@ -29,169 +29,80 @@
             margin-bottom: 10px;
         }
 
-        header p {
-            font-size: 18px;
-        }
-
         .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 25px 18px;
-        }
-
-        .card {
-            background: white;
-            margin: 20px 0;
-            padding: 28px;
-            border-radius: 15px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
-
-        .card h2 {
-            margin-top: 0;
-        }
-
-        .button {
-            display: inline-block;
-            background: #16a34a;
-            color: white;
-            padding: 14px 22px;
-            margin-top: 10px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .button:hover {
-            background: #15803d;
-        }
-
-        .lesson {
-            border-left: 4px solid #16a34a;
-            padding-left: 15px;
-            margin: 20px 0;
-        }
-
-        .warning {
-            background: #fff3cd;
-            border: 1px solid #e6c85c;
-            padding: 18px;
-            border-radius: 10px;
-            margin-top: 25px;
-            font-size: 14px;
-        }
-
-        footer {
-            background: #111827;
-            color: white;
-            text-align: center;
+            max-width: 600px;
+            margin: 40px auto;
             padding: 25px;
-            margin-top: 30px;
+            text-align: center;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .payment-box {
+            background: #f0fdf4;
+            border: 2px solid #22c55e;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .payment-box h3 {
+            margin-top: 0;
+            color: #15803d;
+            text-align: center;
+        }
+
+        .payment-box p {
+            margin: 8px 0;
+            font-size: 16px;
+        }
+
+        .btn-whatsapp {
+            display: block;
+            width: 100%;
+            background-color: #25D366;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #1EBE5D;
         }
     </style>
 </head>
-
 <body>
 
-<header>
-    <h1>📈 Morgan Trading Hub</h1>
-    <p>Learn Trading • Understand Risk • Trade Responsibly</p>
-</header>
+    <header>
+        <h1>Morgan Trading Hub</h1>
+        <p>Learn Coding & Trading Skills</p>
+    </header>
 
-<div class="container">
+    <div class="container">
+        <h2>Payment Details</h2>
+        <p>Send your payment directly via M-Pesa using the details below:</p>
+        
+        <!-- M-PESA PAYMENT DETAILS -->
+        <div class="payment-box">
+            <h3>📱 M-Pesa Payment Info</h3>
+            <p><strong>Option 1 (Send Money):</strong> 0116162159</p>
+            <p><strong>Option 2 (Till Number):</strong> [ENTER TILL NUMBER IF YOU HAVE ONE]</p>
+            <p><strong>Account Name:</strong> Morgan Trading Hub</p>
+        </div>
 
-    <div class="card">
-        <h2>Welcome 👋</h2>
+        <p>After making the payment, click below to send your confirmation / M-Pesa message on WhatsApp:</p>
 
-        <p>
-            Welcome to Morgan Trading Hub.
-            This website provides educational information
-            about trading, market analysis and risk management.
-        </p>
-
-        <a href="#lessons" class="button">
-            Start Learning
+        <!-- WHATSAPP DIRECT LINK -->
+        <a href="https://wa.me/254116162159?text=Hi,%20I%20have%20sent%20the%20M-Pesa%20payment." class="btn-whatsapp" target="_blank">
+            💬 Send Payment Confirmation on WhatsApp
         </a>
     </div>
-
-
-    <div class="card" id="lessons">
-
-        <h2>📚 Trading Manual</h2>
-
-        <div class="lesson">
-            <h3>Lesson 1 — Trading Basics</h3>
-            <p>
-                Learn what financial markets are and
-                understand the basic concepts of trading.
-            </p>
-        </div>
-
-        <div class="lesson">
-            <h3>Lesson 2 — Risk Management</h3>
-            <p>
-                Learn why protecting your trading capital
-                is an important part of trading.
-            </p>
-        </div>
-
-        <div class="lesson">
-            <h3>Lesson 3 — Market Analysis</h3>
-            <p>
-                Learn the basics of studying price movements
-                and market information.
-            </p>
-        </div>
-
-        <div class="lesson">
-            <h3>Lesson 4 — Trading Psychology</h3>
-            <p>
-                Learn about discipline, patience and
-                managing emotions while trading.
-            </p>
-        </div>
-
-    </div>
-
-
-    <div class="card">
-
-        <h2>🚀 Learn More</h2>
-
-        <p>
-            Before trading with real money, learn about the
-            risks and make sure you understand the platform
-            and products involved.
-        </p>
-
-        <a href="#" class="button">
-            Join / Learn More
-        </a>
-
-    </div>
-
-
-    <div class="warning">
-
-        <strong>⚠️ Risk Warning</strong>
-
-        <p>
-            Trading financial products involves significant risk
-            and you may lose your invested capital. Educational
-            information on this website does not guarantee profits.
-        </p>
-
-    </div>
-
-</div>
-
-
-<footer>
-
-    <p>© 2026 Morgan Trading Hub</p>
-    <p>Educational trading information</p>
-
-</footer>
 
 </body>
 </html>
